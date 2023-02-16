@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingActivity"
+    android:background="@drawable/numbers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/score"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/coin"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="monospace"
+            android:text="Total Score: 0"/>
+        <TextView
+            android:id="@+id/high_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="monospace"
+            android:text="Last high Score: 0"
+            android:drawableEnd="@drawable/coin"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/start_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/start"
+
+            android:layout_margin="20dp"
+            />
+        <ImageButton
+            android:id="@+id/background_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/environment"
+            android:layout_margin="20dp"
+            />
+        <ImageButton
+            android:id="@+id/settings_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_btn"
+            android:layout_margin="20dp"
+            />
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannersId">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

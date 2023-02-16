@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/over_background"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Language"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/translate"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:clickable="true"
+        android:textStyle="bold"/>
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="2dp"
+     android:background="@color/black"
+     android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:clickable="true"
+        android:text="Reset"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/reset"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

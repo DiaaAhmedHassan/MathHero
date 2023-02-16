@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Math hero</string>
+    <string name="ads">ca-app-pub-3940256099942544~3347511713</string>
+    <!--real banner ads ca-app-pub-1280925099028371/1175193711-->
+    <!-- real main ca-app-pub-1280925099028371~2488275387 -->
+    <!--real inter ca-app-pub-1280925099028371/3609785366-->
+    <string name="bannersId">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interId">ca-app-pub-3940256099942544/1033173712</string>
+</resources>
